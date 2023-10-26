@@ -779,5 +779,5 @@ class LoadingWindowConsortia(customtkinter.CTkToplevel):
 
 ## When We upload the documentation we need to make sure to remove temporalitly these lineas
 
-#app = App()
-#app.mainloop()
+app = App()
+app.mainloop()
