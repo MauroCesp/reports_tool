@@ -22,7 +22,12 @@ release = '1.1'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 # This extension we need to add it to generate 
-extensions = ['sphinx.ext.autodoc']
+extensions = [
+   'sphinx.ext.duration',
+   'sphinx.ext.doctest',
+   'sphinx.ext.autodoc',
+   'sphinx.ext.autosummary',
+]
 
 templates_path = ['_templates']
 exclude_patterns = []

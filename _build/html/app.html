@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>APP main script &#8212; Reports tool 1.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=601dbdee" />
+    <script src="_static/documentation_options.js?v=56dcb7b8"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="controller" href="controller.html" />
+    <link rel="prev" title="Reports tool’s documentation - Introduction" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="controller.html" title="controller"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Reports tool’s documentation - Introduction"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Reports tool 1.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">APP main script</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="module-app">
+<span id="app-main-script"></span><h1>APP main script<a class="headerlink" href="#module-app" title="Link to this heading">¶</a></h1>
+<dl class="field-list simple">
+<dt class="field-odd">inherited-members<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="app.AlertWindow">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">app.</span></span><span class="sig-name descname"><span class="pre">AlertWindow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.AlertWindow" title="Link to this definition">¶</a></dt>
+<dd><p>Create a custom top-level window for the alert message</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="app.AlertWindow.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.AlertWindow.__init__" title="Link to this definition">¶</a></dt>
+<dd><p>Construct a toplevel widget with the parent MASTER.</p>
+<p>Valid resource names: background, bd, bg, borderwidth, class,
+colormap, container, cursor, height, highlightbackground,
+highlightcolor, highlightthickness, menu, relief, screen, takefocus,
+use, visual, width.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="app.App">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">app.</span></span><span class="sig-name descname"><span class="pre">App</span></span><a class="headerlink" href="#app.App" title="Link to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="app.App.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.App.__init__" title="Link to this definition">¶</a></dt>
+<dd><p>Init function</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.App.button_callback">
+<span class="sig-name descname"><span class="pre">button_callback</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.App.button_callback" title="Link to this definition">¶</a></dt>
+<dd><p>Call back function is so that the window faces the front.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.App.open_toplevel">
+<span class="sig-name descname"><span class="pre">open_toplevel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">product_title</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">switch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.App.open_toplevel" title="Link to this definition">¶</a></dt>
+<dd><p>Top level window</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.App.show_alert">
+<span class="sig-name descname"><span class="pre">show_alert</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.App.show_alert" title="Link to this definition">¶</a></dt>
+<dd><p>Show Alerts</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="app.LoadingWindow">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">app.</span></span><span class="sig-name descname"><span class="pre">LoadingWindow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">browse_button_result</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.LoadingWindow" title="Link to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="app.LoadingWindow.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">browse_button_result</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.LoadingWindow.__init__" title="Link to this definition">¶</a></dt>
+<dd><p>Construct a toplevel widget with the parent MASTER.</p>
+<p>Valid resource names: background, bd, bg, borderwidth, class,
+colormap, container, cursor, height, highlightbackground,
+highlightcolor, highlightthickness, menu, relief, screen, takefocus,
+use, visual, width.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="app.LoadingWindowConsortia">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">app.</span></span><span class="sig-name descname"><span class="pre">LoadingWindowConsortia</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">browse_button_results</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.LoadingWindowConsortia" title="Link to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="app.LoadingWindowConsortia.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">browse_button_results</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.LoadingWindowConsortia.__init__" title="Link to this definition">¶</a></dt>
+<dd><p>Construct a toplevel widget with the parent MASTER.</p>
+<p>Valid resource names: background, bd, bg, borderwidth, class,
+colormap, container, cursor, height, highlightbackground,
+highlightcolor, highlightthickness, menu, relief, screen, takefocus,
+use, visual, width.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="app.MembersNumber">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">app.</span></span><span class="sig-name descname"><span class="pre">MembersNumber</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">product_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">switch1</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.MembersNumber" title="Link to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="app.MembersNumber.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">product_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">switch1</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.MembersNumber.__init__" title="Link to this definition">¶</a></dt>
+<dd><p>Construct a toplevel widget with the parent MASTER.</p>
+<p>Valid resource names: background, bd, bg, borderwidth, class,
+colormap, container, cursor, height, highlightbackground,
+highlightcolor, highlightthickness, menu, relief, screen, takefocus,
+use, visual, width.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="app.MyCheckboxFrame">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">app.</span></span><span class="sig-name descname"><span class="pre">MyCheckboxFrame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">master</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.MyCheckboxFrame" title="Link to this definition">¶</a></dt>
+<dd><p>My checkbox frame</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="app.MyCheckboxFrame.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">master</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.MyCheckboxFrame.__init__" title="Link to this definition">¶</a></dt>
+<dd><p>Init function</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.MyCheckboxFrame.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.MyCheckboxFrame.get" title="Link to this definition">¶</a></dt>
+<dd><p>I used this method to be able to pass the values of the check boxes to the APP application 
+In the submit button I call the ‘check frame’ and the GET() method with the SELF object</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="app.ToplevelWindow">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">app.</span></span><span class="sig-name descname"><span class="pre">ToplevelWindow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">product_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">switch1</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.ToplevelWindow" title="Link to this definition">¶</a></dt>
+<dd><p>CLASE TOP LEVEL WEBSTATS</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="app.ToplevelWindow.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">product_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">switch1</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.ToplevelWindow.__init__" title="Link to this definition">¶</a></dt>
+<dd><p>Construct a toplevel widget with the parent MASTER.</p>
+<p>Valid resource names: background, bd, bg, borderwidth, class,
+colormap, container, cursor, height, highlightbackground,
+highlightcolor, highlightthickness, menu, relief, screen, takefocus,
+use, visual, width.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="app.ToplevelWindowConsortia">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">app.</span></span><span class="sig-name descname"><span class="pre">ToplevelWindowConsortia</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">product_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">switch1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">res</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.ToplevelWindowConsortia" title="Link to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="app.ToplevelWindowConsortia.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">product_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">switch1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">res</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.ToplevelWindowConsortia.__init__" title="Link to this definition">¶</a></dt>
+<dd><p>Construct a toplevel widget with the parent MASTER.</p>
+<p>Valid resource names: background, bd, bg, borderwidth, class,
+colormap, container, cursor, height, highlightbackground,
+highlightcolor, highlightthickness, menu, relief, screen, takefocus,
+use, visual, width.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<p class="caption" role="heading"><span class="caption-text">Python files used in this program:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">APP main script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#app.AlertWindow"><code class="docutils literal notranslate"><span class="pre">AlertWindow</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#app.App"><code class="docutils literal notranslate"><span class="pre">App</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#app.LoadingWindow"><code class="docutils literal notranslate"><span class="pre">LoadingWindow</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#app.LoadingWindowConsortia"><code class="docutils literal notranslate"><span class="pre">LoadingWindowConsortia</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#app.MembersNumber"><code class="docutils literal notranslate"><span class="pre">MembersNumber</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#app.MyCheckboxFrame"><code class="docutils literal notranslate"><span class="pre">MyCheckboxFrame</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#app.ToplevelWindow"><code class="docutils literal notranslate"><span class="pre">ToplevelWindow</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#app.ToplevelWindowConsortia"><code class="docutils literal notranslate"><span class="pre">ToplevelWindowConsortia</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="controller.html">controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="test.html">Test</a></li>
+</ul>
+
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="index.html"
+                          title="previous chapter">Reports tool’s documentation - Introduction</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="controller.html"
+                          title="next chapter">controller</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/app.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="controller.html" title="controller"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Reports tool’s documentation - Introduction"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Reports tool 1.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">APP main script</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2023, Mauro Céspedes Araya.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

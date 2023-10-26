@@ -70,11 +70,10 @@ class MyCheckboxFrame(customtkinter.CTkFrame):
             checkbox = customtkinter.CTkCheckBox(self, text=value)
             checkbox.grid(row=i+1, column=0, padx=10, pady=(10, 0), sticky="w")
             self.checkboxes.append(checkbox)
-    # ------------ GET -----------
-    # Este metodo lo utilizo para poder pasar los valores de los check boxes a la aplicacion APP
-    # En el boton de submit llamo con el objeto SELF al 'check frame' y el metodo GET()
-    def get(self):
 
+    def get(self):
+        """I used this method to be able to pass the values of the check boxes to the APP application 
+        In the submit button I call the 'check frame' and the GET() method with the SELF object"""
         checked_checkboxes = []
 
         # Aqui lo que hago es adjuntar el texto de cada checkbox
@@ -87,8 +86,7 @@ class MyCheckboxFrame(customtkinter.CTkFrame):
 
 class App(customtkinter.CTk):
 
-    def __init__(self):
-        
+    def __init__(self):     
         """Init function"""
         super().__init__()
 
@@ -140,8 +138,7 @@ class App(customtkinter.CTk):
         self.product_title = ''
     # ----------- BOTON ------------
     def button_callback(self):
-        """Call back function"""
-        # Esto es para que la ventana quede de frente
+        """Call back function is so that the window faces the front."""
         self.lower()
 
         # Asi llamamos al metodo que nos regresa los valores de los check boxes
@@ -489,8 +486,8 @@ class MembersNumber(customtkinter.CTkToplevel):
     def cancel_button_callback(self):
         self.destroy()
 
-# Create a custom top-level window for the alert message
 class AlertWindow(CTkToplevel):
+    """Create a custom top-level window for the alert message"""
     def __init__(self, message):
         super().__init__()
 
@@ -782,5 +779,5 @@ class LoadingWindowConsortia(customtkinter.CTkToplevel):
 
 ## When We upload the documentation we need to make sure to remove temporalitly these lineas
 
-app = App()
-app.mainloop()
+#app = App()
+#app.mainloop()
